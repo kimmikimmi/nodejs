@@ -1,0 +1,33 @@
+//Page 95~ 109
+/*
+	노드 서버 구축하기.
+	Human resource 앱의 노드 서버부분 구축..
+*/
+
+/*
+	1. 서버 계획
+		-직원 목록, 개인별 직원 정보를 보여주는 2가지 기능 필요..
+		-CSS, Client side JS, images, HTML 파일들이 전송될 수 있어야 함.
+		-서비스 방식은 RESTful (o) , SOAP/WSDL(x) Web_Service_Description_Language.
+			근거 : 앵귤러와 같은 다양한 Front-end 프레임워크와 연동시에 Restful API 측이 훨씬 적용하기 쉽다.
+				또한 RESTful의 설계패턴을 잘 따를 경우 HR앱에서 요구하는 직원 관련 기능의 CRUD(Create, retrieve, update, delete)  API가 명확히 드러난다.
+*/
+/*
+	2. 앱 구조 잡기
+
+		-database
+			-employees.json
+		-index.js
+		=lib
+		=node_modules
+			-colors
+		-package.json
+		-public
+			-home.html
+			-style.css
+
+
+	lib 디렉토리에는 지역적이고 프로젝트에 밀접한 모듈들을 모을 것.
+	public 디렉토리에는 static resources를 저장할 것.
+	이 예제를 최대한 단순화 하기 위해 employees.json을 질의를 위한 DB처럼 사용할 것이다.
+*/

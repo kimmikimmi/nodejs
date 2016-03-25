@@ -1,0 +1,9 @@
+commands
+
+1) db : print a current working db, manipulate current db.
+
+2) use _database_name : switch database
+
+3) show dbs : display all possible dbs
+
+4) 
